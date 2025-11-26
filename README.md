@@ -149,7 +149,7 @@ Automatic bracket/quote pairs.
 ### Terminal
 | Action | Key |
 |--------|------|
-| Toggle | `<leader>tt` |
+| Float | `<leader>th` |
 | Vertical | `<leader>tv` |
 | Horizontal | `<leader>th` |
 
