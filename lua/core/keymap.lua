@@ -1,11 +1,19 @@
 local map = vim.keymap.set
-vim.opt.number = true
 vim.g.mapleader = " "
 
-map("n", "<leader>pf", vim.cmd.Ex)
--- Window navigation
-vim.keymap.set("n", "<C-h>", "<C-w>h")
-vim.keymap.set("n", "<C-l>", "<C-w>l")
-vim.keymap.set("n", "<C-j>", "<C-w>j")
-vim.keymap.set("n", "<C-k>", "<C-w>k")
+-- File explorer shortcut
+map("n", "<leader>pf", vim.cmd.Ex, { desc = "Open file explorer" })
 
+-- Window navigation
+map("n", "<C-h>", "<C-w>h", { desc = "Move left" })
+map("n", "<C-l>", "<C-w>l", { desc = "Move right" })
+map("n", "<C-j>", "<C-w>j", { desc = "Move down" })
+map("n", "<C-k>", "<C-w>k", { desc = "Move up" })
+
+-- Yank to system clipboard
+map("v", "<leader>y", '"+y', { desc = "Yank to system clipboard" })
+map("n", "<leader>Y", '"+Y', { desc = "Yank line to system clipboard" })
+
+-- Paste from system clipboard
+map("n", "<leader>p", '"+p', { desc = "Paste from system clipboard" })
+map("n", "<leader>P", '"+P', { desc = "Paste before from system clipboard" })
