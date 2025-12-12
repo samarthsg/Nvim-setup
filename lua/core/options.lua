@@ -1,7 +1,3 @@
--- ===========================
---   Neovim Options (Final)
--- ===========================
-
 local opt = vim.opt
 
 -- Cursor
@@ -51,3 +47,5 @@ opt.updatetime = 250                              -- Faster UI updates than defa
 -- Security / Safety
 opt.modelines = 0                                 -- Disable modeline for security
 
+opt.timeout = true
+opt.timeoutlen = 350

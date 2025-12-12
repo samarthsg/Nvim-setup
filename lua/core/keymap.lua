@@ -18,7 +18,9 @@ map("n", "<leader>Y", '"+Y', { desc = "Yank line to system clipboard" })
 map("n", "<leader>p", '"+p', { desc = "Paste from system clipboard" })
 map("n", "<leader>P", '"+P', { desc = "Paste before from system clipboard" })
 
-vim.keymap.set("", "<Up>", "<Nop>")
-vim.keymap.set("", "<Down>", "<Nop>")
-vim.keymap.set("", "<Left>", "<Nop>")
-vim.keymap.set("", "<Right>", "<Nop>")
+map("", "<Up>", "<Nop>")
+map("", "<Down>", "<Nop>")
+map("", "<Left>", "<Nop>")
+map("", "<Right>", "<Nop>")
+
+map("i", "jj", "<Esc>") -- To replace Esc key pain
